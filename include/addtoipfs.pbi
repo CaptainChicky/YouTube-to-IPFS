@@ -3,9 +3,9 @@
   result$=""
   
 If exitcode=0
-      
-  p = RunProgram(ipfs$, add$ + " " + Chr(34) + temp$ + filename$ + Chr(34), temp$ ,#PB_Program_Open|#PB_Program_Read|#PB_Program_Hide)
-  
+
+  p = RunProgram(ipfs$, add$ + " " + Chr(34) + Addbackslash(temp$) + filename$ + Chr(34), temp$ ,#PB_Program_Open|#PB_Program_Read|#PB_Program_Hide)
+    
 While ProgramRunning(p)
   
 If exit=1:kill(p):ProcedureReturn:EndIf
@@ -35,6 +35,6 @@ EndIf
   ProcedureReturn
 
 EndProcedure
-; IDE Options = PureBasic 5.70 LTS (Windows - x86)
+; IDE Options = PureBasic 5.70 LTS (Linux - x64)
 ; Folding = +
 ; EnableXP

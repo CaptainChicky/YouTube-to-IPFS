@@ -1,4 +1,33 @@
-﻿Global NewList GateWays.s()
+﻿CompilerIf #PB_Compiler_OS = #PB_OS_Windows
+  
+  appdata$ = GetUserDirectory(#PB_Directory_ProgramData)
+  appdata$=AddBackslash(appdata$)
+  
+  Global backslash$="\"
+  Global downloaderexe$ = "downloader.exe"
+  Global youtubedl$ = "youtube-dl.exe"
+  
+  Global ipfsdir$ = appdata$ + "ipfs" + backslash$
+  Global ipfs$ = ipfsdir$ + "ipfs.exe"
+  Global ipfslauncher$ = "ipfs-launcher.exe"
+  
+CompilerElse
+  
+  Global backslash$="/"
+  
+  appdata$ = GetPathPart( ProgramFilename() ) + "data" + backslash$ + "ipfs" + backslash$
+
+  Global downloaderexe$ = "downloader"
+  Global youtubedl$ = "youtube-dl"
+  
+  Global ipfsdir$ = appdata$ + "ipfs" + backslash$
+  Global ipfs$ = ipfsdir$ + "ipfs"
+  
+  Global killdaemon$ = "Do you want to also stop the IPFS daemon?"
+  
+CompilerEndIf
+
+Global NewList GateWays.s()
 Global NewMap LockedFiles()
 
 Global temp$
@@ -6,12 +35,9 @@ Global filename$
 Global pattern$ = "*.*"
 Global title$ = "YouTube-to-IPFS"
 Global youtubeurl$ = "Video URL"
-Global appdir$ = GetPathPart( ProgramFilename() ) + "data\"
+Global appdir$ = GetPathPart( ProgramFilename() ) + "data" + backslash$
 Global error$ = "Error"
 Global netwerror$ = "Couldn't initiliaze the network"
-Global bootstrapzip$ = "bootstrap.zip"
-Global downloaderexe$ = "downloader.exe"
-Global youtubedl$ = "youtube-dl.exe"
 Global prefsyt$ = "preferences-yt"
 Global prefsipfs$ = "preferences-ips"
 Global prefsmsvcr$ = "preferences-msvcr"
@@ -38,22 +64,23 @@ Global linkg$ = "Gateway link for non IPFS users"
 Global prefix$ = "http://127.0.0.1:8080/ipfs/"
 Global prefixg$ = "https://ipfs.io/ipfs/"
 
-appdata$ = GetUserDirectory(#PB_Directory_ProgramData)
-appdata$=AddBackslash(appdata$)
-
-Global ipfsdir$ = appdata$ + "ipfs\"
-Global ipfs$ = ipfsdir$ + "ipfs.exe"
-Global ipfslauncher$ = "ipfs-launcher.exe"
 Global init$ = "init"
 Global daemon$ = "daemon"
 Global autostart$
-Global launchwithwindows$ = "Start the IPFS daemon with Windows"
 
+Global ipfsdaemon
+
+CompilerIf #PB_Compiler_OS = #PB_OS_Windows
+  
+Global launchwithwindows$ = "Start the IPFS daemon with Windows"
+  
 autostart$=Space(#MAX_PATH)
 SHGetSpecialFolderPath_(#Null,autostart$,#CSIDL_STARTUP,0)
 autostart$=Trim(autostart$)
   
 Global ipfslauncher$ = AddBackslash(autostart$) + "ipfs-launcher.exe"
 
+CompilerEndIf
 ; IDE Options = PureBasic 5.70 LTS (Windows - x64)
+; Folding = 9
 ; EnableXP

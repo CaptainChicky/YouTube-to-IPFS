@@ -51,6 +51,6 @@ EndIf
 EndIf
   
 EndMacro
-; IDE Options = PureBasic 5.70 LTS (Windows - x86)
+; IDE Options = PureBasic 5.70 LTS (Linux - x64)
 ; Folding = +
 ; EnableXP

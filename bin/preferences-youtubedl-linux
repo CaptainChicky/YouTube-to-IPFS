@@ -1,0 +1,17 @@
+﻿
+ipfs = QmNSPa1YhVh1Yir3ZBAawENXukmW6btN8Z6ow2ip3bE1fD
+sha256 = 48976e9933ada4b1e3dea5b0c26215bc9cdb57f0237595a726fed3a8ede0a972
+md5 = 93b2d2272a099e0a0e70bcde56fd5946
+size = 1649628
+title = Downloading - youtube-dl.zip
+saveas = youtube-dl.zip
+pattern = ZIP (*.zip)|*.zip
+width = 300
+height = 85
+invisible = 0
+[msgbox]
+done = Done
+errortitle = Error
+erric = Integrity check failed
+errnetw = Couldn't initiliaze the network.
+errsave = Unable to save the file

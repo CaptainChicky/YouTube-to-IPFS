@@ -1,0 +1,17 @@
+﻿
+ipfs = QmPHGYEWuJz6fToATKcYLPrscWsuCVkv1zLWrSUvT5FH7a
+sha256 = 4ccd96e166a089e028063854d9e8304c6a361df7cc77ee07b58c9a6d833740c4
+md5 = 7e5fdcd33602a1c9266aba55619f97d4
+size = 20393399 
+title = Downloading - go-ipfs_v0.4.21_linux-amd64.zip
+saveas = go-ipfs_v0.4.21_linux-amd64.zip
+pattern = ZIP (*.zip)|*.zip
+width = 300
+height = 85
+invisible = 0
+[msgbox]
+done = Done
+errortitle = Error
+erric = Integrity check failed
+errnetw = Couldn't initiliaze the network.
+errsave = Unable to save the file

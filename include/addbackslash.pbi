@@ -1,12 +1,12 @@
 ﻿Procedure.s AddBackslash(path.s)
-  
-If Right(path,1)<> "\"
-  path=path+"\"
+    
+If Right(path,1)<> backslash$
+  path=path+backslash$
 EndIf
 
 ProcedureReturn path
 
 EndProcedure
-; IDE Options = PureBasic 5.70 LTS (Windows - x86)
+; IDE Options = PureBasic 5.70 LTS (Linux - x64)
 ; Folding = +
 ; EnableXP

@@ -1,6 +1,8 @@
-﻿DataSection
+﻿IncludePath "bin"
+
+DataSection
   gatewaysa:
-    IncludeBinary "bin\gateways"
+    IncludeBinary "gateways"
   gatewaysb:
 EndDataSection
 
@@ -369,9 +371,9 @@ Else
   End 2
   
 EndIf
-; IDE Options = PureBasic 5.70 LTS (Windows - x64)
+; IDE Options = PureBasic 5.70 LTS (Linux - x64)
 ; Folding = AQ-
 ; EnableThread
 ; EnableXP
-; Executable = downloader.exe
+; Executable = downloader
 ; CompileSourceDirectory

@@ -1,31 +1,37 @@
 ﻿UseZipPacker():UseMD5Fingerprint()
-  
-  IncludeFile "include\addbackslash.pbi"
-  IncludeFile "include\vars.pbi"
-  IncludeFile "include\constants.pbi"
-  IncludeFile "include\files.pbi"
-  IncludeFile "include\createtempdir.pbi"
-  IncludeFile "include\fileputcontents.pbi"
-  IncludeFile "include\quit.pbi"
-  IncludeFile "include\ipfs.pbi"
-  IncludeFile "include\lockfile.pbi"
-  IncludeFile "include\initnetw.pbi"
-  IncludeFile "include\unpack.pbi"
-  IncludeFile "include\download.pbi"
-  IncludeFile "include\createfiles.pbi"
-  IncludeFile "include\kill.pbi"
-  IncludeFile "include\timer.pbi"
-  IncludeFile "include\addtoipfs.pbi"
-  IncludeFile "include\timerevent.pbi"
-  IncludeFile "include\success.pbi"
-  IncludeFile "include\downloadvideo.pbi"
-  IncludeFile "include\autostart.pbi"
-  IncludeFile "include\main.pbi"
 
+  Declare Kill(process)
+  Declare.s AddBackslash(path.s)
+  
+  IncludePath "include"
+
+  IncludeFile "vars.pbi"
+  IncludeFile "addbackslash.pbi"
+  IncludeFile "constants.pbi"
+  IncludeFile "files.pbi"
+  IncludeFile "createtempdir.pbi"
+  IncludeFile "fileputcontents.pbi"
+  IncludeFile "quit.pbi"
+  IncludeFile "ipfs.pbi"
+  IncludeFile "lockfile.pbi"
+  IncludeFile "initnetw.pbi"
+  IncludeFile "rundaemon.pbi"
+  IncludeFile "unpack.pbi"
+  IncludeFile "download.pbi"
+  IncludeFile "createfiles.pbi"
+  IncludeFile "kill.pbi"
+  IncludeFile "timer.pbi"
+  IncludeFile "addtoipfs.pbi"
+  IncludeFile "timerevent.pbi"
+  IncludeFile "success.pbi"
+  IncludeFile "downloadvideo.pbi"
+  IncludeFile "autostart.pbi"
+  IncludeFile "main.pbi"
+    
   Main()
-; IDE Options = PureBasic 5.70 LTS (Windows - x86)
+; IDE Options = PureBasic 5.70 LTS (Linux - x64)
 ; EnableThread
 ; EnableXP
-; Executable = youtube-to-ipfs.exe
+; Executable = youtube-to-ipfs
 ; CPU = 1
 ; CompileSourceDirectory

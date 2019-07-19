@@ -13,6 +13,6 @@ If IsProgram(prog)
 EndIf
 
 EndProcedure
-; IDE Options = PureBasic 5.70 LTS (Windows - x86)
-; Folding = -
+; IDE Options = PureBasic 5.70 LTS (Windows - x64)
+; Folding = +
 ; EnableXP
