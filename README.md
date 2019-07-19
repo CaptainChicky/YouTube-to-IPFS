@@ -1,5 +1,5 @@
 # YouTube-to-IPFS
-A Windows tool which copies videos from YouTube to the Inter-Planetary File System (IPFS)
+A tool which copies videos from YouTube to the Inter-Planetary File System (IPFS)
 
 <h2>Description</h2>
 <p>This tool can copy videos from YouTube to the Inter-Planetary File System (IPFS)</p>
