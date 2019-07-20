@@ -1,5 +1,5 @@
 # YouTube-to-IPFS
-A tool which copies videos from YouTube to the Inter-Planetary File System (IPFS)
+A tool which copies videos from YouTube and <a href="https://ytdl-org.github.io/youtube-dl/supportedsites.html">other sites</a> to the Inter-Planetary File System (IPFS)
 
 <h2>Description</h2>
 <p>This tool can copy videos from YouTube to the Inter-Planetary File System (IPFS)</p>
@@ -7,7 +7,9 @@ A tool which copies videos from YouTube to the Inter-Planetary File System (IPFS
 <h2>Requirements</h2>
 <ul>
 <li>Internet connection</li>
+<li><a href="https://www.python.org/">Python</a> if you're using Linux</li>
 <li><a href="https://www.purebasic.com/">PureBasic</a> to compile the source</li>
+  
 </ul>
 
 <h2>Compiling</h2>
