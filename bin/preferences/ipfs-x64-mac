@@ -1,0 +1,17 @@
+﻿
+ipfs = QmcHY1BvmNQiUmn6dCm7r1SGqUyJjrW4NbCMRuUrH9TGGF
+sha256 = 392c896159fc8309005d47b4e8736e46a2ab58c1b5269c56a4a1d3c569d91082
+md5 = 24b99fe1e46ca50244dbb9937f8f06f7
+size = 18021489 
+title = Downloading - go-ipfs_v0.4.21_darwin-amd64.zip
+saveas = go-ipfs_v0.4.21_darwin-amd64.zip
+pattern = ZIP (*.zip)|*.zip
+width = 300
+height = 85
+invisible = 0
+[msgbox]
+done = Done
+errortitle = Error
+erric = Integrity check failed
+errnetw = Couldn't initiliaze the network.
+errsave = Unable to save the file
