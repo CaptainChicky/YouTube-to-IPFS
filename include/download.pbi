@@ -2,8 +2,9 @@
   
   OpenPreferences(preffile$)
   
-  name$ = ReadPreferenceString(saveas$,"")
-  hash$ = ReadPreferenceString(md5$,"")
+    name$ = ReadPreferenceString(saveas$,"")
+  
+    hash$ = ReadPreferenceString(md5$,"")
   
   ClosePreferences()
  
@@ -34,7 +35,7 @@ If preffile$ = appdir$ + prefsipfs$
     
 EndIf
 
-CompilerIf #PB_Compiler_OS = #PB_OS_Linux
+CompilerIf #PB_Compiler_OS = #PB_OS_Linux Or #PB_Compiler_OS = #PB_OS_MacOS
 
 If preffile$ = appdir$ + prefsyt$  
   

@@ -81,6 +81,6 @@ autostart$=Trim(autostart$)
 Global ipfslauncher$ = AddBackslash(autostart$) + "ipfs-launcher.exe"
 
 CompilerEndIf
-; IDE Options = PureBasic 5.70 LTS (Windows - x64)
+; IDE Options = PureBasic 5.70 LTS (Linux - x64)
 ; Folding = 9
 ; EnableXP

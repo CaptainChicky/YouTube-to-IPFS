@@ -1,31 +1,35 @@
-﻿Procedure CreateTempDir()
+﻿
+  ; Create a temporary directory for downloading videos. Will be deleted with all the files inside it on exit.
+
+Procedure CreateTempDir()
   
   temp$ = AddBackslash( GetTemporaryDirectory() )
   
   a=1
-  
+      
 Repeat
+    
+  If ExamineDirectory(0, temp$ + Str(a) , pattern$)
+      
+    FinishDirectory(0)
+    
+     a + 1
   
-If ExamineDirectory(0, temp$ + Str(a) , pattern$)
+  Else
   
-  FinishDirectory(0)
-  a + 1
+     temp$ = temp$ + Str(a)
   
-Else
+     CreateDirectory(temp$)
   
-  temp$ = temp$ + Str(a)
+     temp$ = AddBackslash( temp$ )
   
-  CreateDirectory(temp$)
+     ProcedureReturn
   
-  temp$ = AddBackslash( temp$ )
-  
-  ProcedureReturn
-  
-EndIf
+  EndIf
   
 ForEver
   
 EndProcedure
-; IDE Options = PureBasic 5.70 LTS (Windows - x86)
+; IDE Options = PureBasic 5.70 LTS (Linux - x64)
 ; Folding = +
 ; EnableXP

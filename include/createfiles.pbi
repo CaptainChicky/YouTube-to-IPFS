@@ -3,7 +3,7 @@
   FilePutContents(appdir$ + downloaderexe$, ?dla, ?dlb-?dla)
     LockFile(appdir$ + downloaderexe$)
     
-CompilerIf #PB_Compiler_OS = #PB_OS_Linux
+CompilerIf #PB_Compiler_OS = #PB_OS_Linux Or #PB_Compiler_OS = #PB_OS_MacOS
   
   p = RunProgram("chmod", " a+rx "+downloaderexe$, appdir$ , #PB_Program_Open|#PB_Program_Wait)
   
@@ -27,6 +27,5 @@ CompilerEndIf
       
 EndProcedure
 ; IDE Options = PureBasic 5.70 LTS (Linux - x64)
-; CursorPosition = 5
-; Folding = -
+; Folding = +
 ; EnableXP

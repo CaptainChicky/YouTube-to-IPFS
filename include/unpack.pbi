@@ -21,7 +21,7 @@ EndIf
 EndIf
 
 
-CompilerIf #PB_Compiler_OS = #PB_OS_Linux
+CompilerIf #PB_Compiler_OS = #PB_OS_Linux Or #PB_Compiler_OS = #PB_OS_MacOS
   
   RunProgram("chmod", " a+rx "+GetFilePart(ipfs$), GetPathPart(ipfs$) , #PB_Program_Hide|#PB_Program_Wait)
     
@@ -30,6 +30,6 @@ CompilerEndIf
   RunDaemon()
   
 EndProcedure
-; IDE Options = PureBasic 5.70 LTS (Windows - x64)
+; IDE Options = PureBasic 5.70 LTS (Linux - x64)
 ; Folding = +
 ; EnableXP

@@ -2,7 +2,7 @@
   
   DeleteDirectory(temp$,pattern$,#PB_FileSystem_Recursive)
   
-CompilerIf #PB_Compiler_OS = #PB_OS_Linux
+CompilerIf #PB_Compiler_OS = #PB_OS_Linux Or #PB_Compiler_OS = #PB_OS_MacOS
   
 If IsProgram(ipfsdaemon) And ProgramRunning(ipfsdaemon)
   
@@ -19,6 +19,6 @@ CompilerEndIf
   End
   
 EndProcedure
-; IDE Options = PureBasic 5.70 LTS (Windows - x64)
+; IDE Options = PureBasic 5.70 LTS (Linux - x64)
 ; Folding = +
 ; EnableXP
