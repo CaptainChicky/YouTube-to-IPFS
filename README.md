@@ -21,5 +21,5 @@ A tool which copies videos from YouTube and <a href="https://ytdl-org.github.io/
 
 <ul>
 <li>YouTube-to-IPFS makes use of <a href="https://ytdl-org.github.io/youtube-dl/index.html">youtube-dl</a> and might stop working when Google makes changes in its algorithm </li>
-<li>Precompiled binaries can be found in: <a href="https://github.com/99fk/YouTube-to-IPFS/tree/master/Linux">Linux</a> , <a href="https://github.com/99fk/YouTube-to-IPFS/tree/master/Windows">Windows</a> </li>
+<li>Precompiled binaries can be found in: <a href="https://github.com/99fk/YouTube-to-IPFS/tree/master/Linux">Linux</a> , <a href="https://github.com/99fk/YouTube-to-IPFS/tree/master/Mac%20OS">Mac OS</a> , <a href="https://github.com/99fk/YouTube-to-IPFS/tree/master/Windows">Windows</a> </li>
 </ul>
